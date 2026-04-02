@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Заводчиков Артём — Фотограф</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#hero">АЗ</a>
+    <nav class="nav__links" id="navLinks" role="navigation" aria-label="Основная навигация">
+      <a href="#about">Обо мне</a>
+      <a href="#portfolio">Портфолио</a>
+      <a href="#services">Услуги</a>
+      <a href="#process">Процесс</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <!-- Бургер-кнопка для мобильных -->
+    <button class="nav__burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <!-- Фоновый шум для текстуры -->
+      <div class="hero__noise" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__sub reveal">Фотограф · Самара</p>
+        <h1 class="hero__title reveal reveal--delay">Заводчиков<br /><em>Артём</em></h1>
+        <p class="hero__desc reveal reveal--delay2">Портретная и lifestyle съёмка</p>
+        <a href="#portfolio" class="btn btn--outline reveal reveal--delay3">Смотреть работы</a>
+      </div>
+      <!--
+        ↓ ЗАМЕНИТЕ href на реальную ссылку Google Drive
+           Пример: https://drive.google.com/drive/folders/YOUR_FOLDER_ID
+      -->
+      <a href="https://drive.google.com/drive/folders/1F8J5k10EyWlP5y9-oQXhGpmIoiPUv0Tz?usp=sharing"    
+         target="_blank" rel="noopener"
+         class="hero__drive reveal reveal--delay3">
+        <svg width="18" height="18" viewBox="0 0 87.3 78" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M6.6 66.85l3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3L28.2 53H0c0 1.55.4 3.1 1.2 4.5z" fill="currentColor" opacity=".5"/>
+          <path d="M43.65 25L29.2 0c-1.35.8-2.5 1.9-3.3 3.3L1.2 48.5A9 9 0 000 53h28.2z" fill="currentColor" opacity=".7"/>
+          <path d="M73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75L86.1 57.5c.8-1.4 1.2-2.95 1.2-4.5H59l5.85 10.95z" fill="currentColor" opacity=".5"/>
+          <path d="M43.65 25L58.1 0H29.2L43.65 25z" fill="currentColor"/>
+          <path d="M59 53H28.2l-14.45 23.8c1.35.8 2.9 1.2 4.5 1.2h50.8c1.6 0 3.15-.45 4.5-1.2z" fill="currentColor" opacity=".7"/>
+          <path d="M73.4 26.65c-.8-1.4-1.95-2.5-3.3-3.3L58.1 0 43.65 25l15.35 28H87.3c0-1.55-.4-3.1-1.2-4.5z" fill="currentColor"/>
+        </svg>
+        Google Drive
+      </a>
+      <!-- Анимированный скролл-хинт -->
+      <div class="hero__scroll-hint" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about section" id="about">
+      <div class="container about__grid">
+
+        <div class="about__photo reveal">
+          <!--
+            ↓ ЗАМЕНИТЕ src на фото фотографа
+               Рекомендуемый размер: 700×900 px
+               Атрибут alt — описание для доступности
+          -->
+          <img
+            src="images/iam.JPG"
+            alt="Заводчиков Артём — фотограф"
+            loading="lazy" width="700" height="900"
+          />
+          <div class="about__photo-frame" aria-hidden="true"></div>
+          <div class="about__photo-tag">Доступен для съёмок</div>
+        </div>
+
+        <div class="about__text reveal reveal--delay">
+          <span class="section-label">Обо мне</span>
+          <h2>Я снимаю<br /><em>людей, момент<br />и настроение</em></h2>
+          <p>Фотографирую с начала 2024 года. За это время провёл более 30 съёмок, работая в жанре портретной и lifestyle-фотографии с акцентом на естественный свет и атмосферу. Создаю живые, эмоциональные кадры с мягкой цветовой обработкой и вниманием к деталям. Для меня важно передать настроение, характер и искренность в каждом снимке.</p>
+          <p>Работаю в Самаре, выезжаю по России. Если у вас есть идея — мне интересно её воплотить.</p>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__num">30+</span>
+              <span class="stat__label">съёмок</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">1</span>
+              <span class="stat__label">лет опыта</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">3+</span>
+              <span class="stat__label">городов</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO ===================== -->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Работы</span>
+          <h2>Портфолио</h2>
+        </div>
+
+        <!--
+          ↓ ПОРТФОЛИО: замените src каждого <img> на свои фотографии
+             • data-full — ссылка для lightbox (желательно максимальное разрешение)
+             • Классы grid:
+                 .portfolio__item          — стандартная ячейка (1 колонка)
+                 .portfolio__item--wide    — широкая ячейка (2 колонки)
+                 .portfolio__item--tall    — высокая ячейка (2 строки)
+             • Рекомендуемые размеры превью: 800×1000 px
+        -->
+        <div class="portfolio__grid reveal">
+
+          <div class="portfolio__item" data-full="images/misha.jpg">
+            <img src="images/misha.jpg" alt="Портрет" loading="lazy" />
+            <div class="portfolio__overlay">
+              <span>Смотреть</span>
+            </div>
+          </div>
+
+        <div class="portfolio__item portfolio__item--wide" data-full="images/veronika.jpg">
+          <img src="images/veronika.jpg" alt="Lifestyle" loading="lazy" />
+          <div class="portfolio__overlay">
+            <span>Смотреть</span>
+          </div>
+        </div>
+
+        <div class="portfolio__item" data-full="images/zhenya.jpg">
+          <img src="images/zhenya.jpg" alt="Портрет 2" loading="lazy" />
+          <div class="portfolio__overlay">
+            <span>Смотреть</span>
+          </div>
+        </div>
+
+        <div class="portfolio__item" data-full="images/oleg.jpeg">
+          <img src="images/oleg.jpeg" alt="Портрет 3" loading="lazy" />
+          <div class="portfolio__overlay">
+            <span>Смотреть</span>
+          </div>
+        </div>
+
+      <div class="portfolio__item portfolio__item--wide" data-full="images/mumandks.png">
+        <img src="images/mumandks.png" alt="Lifestyle 2" loading="lazy" />
+        <div class="portfolio__overlay">
+          <span>Смотреть</span>
+        </div>
+      </div>
+
+      <div class="portfolio__item" data-full="images/matvey.png">
+        <img src="images/tema.jpg" alt="Портрет 4" loading="lazy" />
+        <div class="portfolio__overlay">
+          <span>Смотреть</span>
+        </div>
+      </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LIGHTBOX ===================== -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фото">
+      <div class="lightbox__backdrop" id="lbBackdrop"></div>
+      <button class="lightbox__close" id="lbClose" aria-label="Закрыть">&times;</button>
+      <button class="lightbox__prev" id="lbPrev" aria-label="Предыдущее фото">&#8592;</button>
+      <button class="lightbox__next" id="lbNext" aria-label="Следующее фото">&#8594;</button>
+      <img class="lightbox__img" id="lbImg" src="" alt="Увеличенное фото" />
+    </div>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Что я предлагаю</span>
+          <h2>Услуги</h2>
+        </div>
+        <div class="services__grid">
+
+          <div class="service-card reveal">
+            <div class="service-card__num">01</div>
+            <h3>Портретная съёмка</h3>
+            <p>Индивидуальные сессии в студии или на натуре. Работаем над образом, светом и настроением вместе.</p>
+            <span class="service-card__price">от 3 000 ₽</span>
+          </div>
+
+          <div class="service-card reveal reveal--delay">
+            <div class="service-card__num">02</div>
+            <h3>Lifestyle &amp; Street</h3>
+            <p>Живые кадры в городской среде. Минимум постановки — максимум атмосферы и характера.</p>
+            <span class="service-card__price">от 3 000 ₽</span>
+          </div>
+
+          <div class="service-card reveal reveal--delay2">
+            <div class="service-card__num">03</div>
+            <h3>Love Story</h3>
+            <p>Парные истории для двоих. Создаём кадры, которые хочется повесить на стену и сохранить навсегда.</p>
+            <span class="service-card__price">от 5 000 ₽</span>
+          </div>
+
+          <div class="service-card reveal reveal--delay3">
+            <div class="service-card__num">04</div>
+            <h3>Коммерческая съёмка</h3>
+            <p>Контент для брендов, соцсетей и рекламных кампаний. Полный цикл от идеи до финального файла.</p>
+            <span class="service-card__price">от 7 000 ₽</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section class="process section" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Как это работает</span>
+          <h2>Процесс</h2>
+        </div>
+        <div class="process__steps">
+
+          <div class="process__step reveal">
+            <div class="process__step-dot" aria-hidden="true"></div>
+            <div class="process__step-content">
+              <span class="process__step-num">01</span>
+              <h3>Знакомство</h3>
+              <p>Пишете мне в Telegram или по телефону. Обсуждаем идею, формат, локацию и удобные даты.</p>
+            </div>
+          </div>
+
+          <div class="process__step reveal reveal--delay">
+            <div class="process__step-dot" aria-hidden="true"></div>
+            <div class="process__step-content">
+              <span class="process__step-num">02</span>
+              <h3>Подготовка</h3>
+              <p>Составляем мудборд, подбираем образ и локацию. Советую по гардеробу и готовлю оборудование.</p>
+            </div>
+          </div>
+
+          <div class="process__step reveal reveal--delay2">
+            <div class="process__step-dot" aria-hidden="true"></div>
+            <div class="process__step-content">
+              <span class="process__step-num">03</span>
+              <h3>Съёмка</h3>
+              <p>Снимаем в комфортной атмосфере. Я направляю и помогаю раскрыться — никакой скованности.</p>
+            </div>
+          </div>
+
+          <div class="process__step reveal reveal--delay3">
+            <div class="process__step-dot" aria-hidden="true"></div>
+            <div class="process__step-content">
+              <span class="process__step-num">04</span>
+              <h3>Готовые фото</h3>
+              <p>Ретушь и цветокоррекция — от 5 до 10 рабочих дней. Фотографии отправляю через Google Drive.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+<!-- ===================== VIDEO ===================== -->
+    <section class="video-section section" id="video">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">За кадром</span>
+          <h2>Backstage</h2>
+        </div>
+
+        <!--
+          ↓ ЗАМЕНИТЕ "backstage.mov" на имя вашего файла
+             Файл должен лежать рядом с index.html
+        -->
+        <div class="video__wrapper reveal">
+          <video
+            src="images/backstage.mp4"
+            controls
+            preload="metadata"
+            playsinline
+            poster=""
+          ></video>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTS ===================== -->
+    <section class="contacts section" id="contacts">
+      <div class="container contacts__grid">
+
+        <div class="contacts__text reveal">
+          <span class="section-label">Свяжитесь со мной</span>
+          <h2>Обсудим<br /><em>вашу идею?</em></h2>
+          <p>Расскажите, что хотите снять — я отвечу в течение нескольких часов и предложу варианты.</p>
+        </div>
+
+        <div class="contacts__links reveal reveal--delay">
+          <!--
+            ↓ ЗАМЕНИТЕ href и текст на реальные контакты
+               Telegram: https://t.me/YOUR_USERNAME
+               Телефон : tel:+7XXXXXXXXXX
+          -->
+          <a href="https://t.me/zav_1234" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 5L2 12.5l7 1M21 5l-4.5 15-7.5-7M21 5L9 13.5"/>
+              </svg>
+            </span>
+            <span>
+              <span class="contact-link__label">Telegram</span>
+              <span class="contact-link__value">@zav_1234</span>
+            </span>
+          </a>
+
+          <a href="tel:+79270143213" class="contact-link">
+            <span class="contact-link__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.13 1 .37 1.97.72 2.9a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.18-1.18a2 2 0 012.11-.45c.93.35 1.9.59 2.9.72A2 2 0 0122 14.92z"/>
+              </svg>
+            </span>
+            <span>
+              <span class="contact-link__label">Телефон</span>
+              <span class="contact-link__value">+7 927 014-32-13</span>
+            </span>
+          </a>
+
+          <!--
+            ↓ ЗАМЕНИТЕ href на реальную ссылку Google Drive
+          -->
+          <a href="https://drive.google.com/drive/folders/1F8J5k10EyWlP5y9-oQXhGpmIoiPUv0Tz?usp=sharing"
+             target="_blank" rel="noopener"
+             class="btn btn--gold contact-drive">
+            <svg width="18" height="18" viewBox="0 0 87.3 78" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M6.6 66.85l3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3L28.2 53H0c0 1.55.4 3.1 1.2 4.5z" fill="currentColor" opacity=".5"/>
+              <path d="M43.65 25L29.2 0c-1.35.8-2.5 1.9-3.3 3.3L1.2 48.5A9 9 0 000 53h28.2z" fill="currentColor" opacity=".7"/>
+              <path d="M73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75L86.1 57.5c.8-1.4 1.2-2.95 1.2-4.5H59l5.85 10.95z" fill="currentColor" opacity=".5"/>
+              <path d="M43.65 25L58.1 0H29.2L43.65 25z" fill="currentColor"/>
+              <path d="M59 53H28.2l-14.45 23.8c1.35.8 2.9 1.2 4.5 1.2h50.8c1.6 0 3.15-.45 4.5-1.2z" fill="currentColor" opacity=".7"/>
+              <path d="M73.4 26.65c-.8-1.4-1.95-2.5-3.3-3.3L58.1 0 43.65 25l15.35 28H87.3c0-1.55-.4-3.1-1.2-4.5z" fill="currentColor"/>
+            </svg>
+            Посмотреть полное портфолио
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__logo">АЗ</span>
+      <p class="footer__copy">© 2026 Заводчиков Артём. Все права защищены.</p>
+      <a href="#hero" class="footer__up" aria-label="Прокрутить наверх">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
